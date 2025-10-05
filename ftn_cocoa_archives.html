@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ARCHIVES - FTN Cocoa Processors Plc</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { box-sizing: border-box; }
+    .video-card { transition: transform .3s ease, box-shadow .3s ease; }
+    .video-card:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(0,0,0,.1); }
+    .gradient-bg {
+      background: linear-gradient(135deg,#3C1810 0%,#5D2F1A 20%,#8B4513 40%,#A0522D 60%,#D2691E 80%,#DEB887 100%);
+      position: relative;
+    }
+    .gradient-bg::before {
+      content:""; position:absolute; top:0; left:0; right:0; bottom:0;
+      background-image:
+        radial-gradient(circle at 20% 30%,rgba(139,69,19,.3) 2px,transparent 2px),
+        radial-gradient(circle at 80% 70%,rgba(160,82,45,.2) 1px,transparent 1px),
+        radial-gradient(circle at 40% 80%,rgba(210,105,30,.2) 1.5px,transparent 1.5px);
+      background-size:50px 50px,30px 30px,40px 40px;
+    }
+    .cocoa-pattern {
+      background-image:
+        radial-gradient(circle at 25% 25%,rgba(139,69,19,.1) 1px,transparent 1px),
+        radial-gradient(circle at 75% 75%,rgba(160,82,45,.08) .5px,transparent .5px);
+      background-size:40px 40px,30px 30px;
+    }
+    .cocoa-card {
+      background: linear-gradient(145deg,#FAEBD7 0%,#F5DEB3 50%,#DEB887 100%);
+      border:2px solid #D2691E;
+    }
+    .cocoa-shadow { box-shadow:0 8px 32px rgba(139,69,19,.3); }
+  </style>
+  <script>
+    function playVideo(container, videoId) {
+      container.innerHTML = `
+        <iframe class="w-full h-full rounded-t-xl" src="https://www.youtube.com/embed/${videoId}?autoplay=1"
+        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>`;
+    }
+  </script>
+</head>
+<body class="bg-amber-50 cocoa-pattern font-sans">
+  <!-- Header -->
+  <header class="gradient-bg text-white py-20">
+    <div class="container mx-auto px-6 text-center relative z-10">
+      <div class="flex items-center justify-center mb-4">
+        <div class="w-8 h-12 bg-amber-800 rounded-full mr-3 rotate-12 shadow-lg"></div>
+        <h1 class="text-2xl font-light tracking-wide opacity-90">FTN COCOA PROCESSORS PLC</h1>
+        <div class="w-8 h-12 bg-amber-800 rounded-full ml-3 -rotate-12 shadow-lg"></div>
+      </div>
+      <div class="w-24 h-0.5 bg-amber-300 mx-auto opacity-80 mb-8"></div>
+      <h2 class="text-6xl font-bold mb-4 tracking-tight">ARCHIVES</h2>
+      <div class="flex items-center justify-center space-x-4 text-xl opacity-90">
+        <span>Media and Publications</span>
+        <span class="text-orange-200">•</span>
+        <span class="text-orange-200 font-medium">Interviews</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Video Grid -->
+  <main class="container mx-auto px-6 py-16">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Video 1 -->
+      <div class="video-card cocoa-card rounded-xl cocoa-shadow overflow-hidden">
+        <div class="aspect-video bg-gray-200 relative group cursor-pointer" onclick="playVideo(this,'6NbbSs2b7v0')">
+          <img src="https://img.youtube.com/vi/6NbbSs2b7v0/maxresdefault.jpg" alt="Akin Laoye, Executive Director, FTN Cocoa Processing" class="w-full h-full object-cover rounded-t-xl"/>
+          <div class="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-20 transition-all rounded-t-xl flex items-center justify-center">
+            <div class="w-20 h-20 bg-red-600 rounded-full flex items-center justify-center group-hover:scale-110 transition">
+              <svg class="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-gray-800 mb-3">Akin Laoye, Executive Director, FTN Cocoa Processing</h3>
+        </div>
+      </div>
+
+      <!-- Video 2 -->
+      <div class="video-card cocoa-card rounded-xl cocoa-shadow overflow-hidden">
+        <div class="aspect-video bg-gray-200 relative group cursor-pointer" onclick="playVideo(this,'xivqyGoKWzI')">
+          <img src="https://img.youtube.com/vi/xivqyGoKWzI/maxresdefault.jpg" alt="Nigeria's Cocoa Processing Sector with Akin Laoye" class="w-full h-full object-cover rounded-t-xl"/>
+          <div class="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-20 transition-all rounded-t-xl flex items-center justify-center">
+            <div class="w-20 h-20 bg-red-600 rounded-full flex items-center justify-center group-hover:scale-110 transition">
+              <svg class="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-gray-800 mb-3">Nigeria's Cocoa Processing Sector with Akin Laoye</h3>
+        </div>
+      </div>
+
+      <!-- Video 3 -->
+      <div class="video-card cocoa-card rounded-xl cocoa-shadow overflow-hidden">
+        <div class="aspect-video bg-gray-200 relative group cursor-pointer" onclick="playVideo(this,'6YTwKKDUlKQ')">
+          <img src="https://img.youtube.com/vi/6YTwKKDUlKQ/maxresdefault.jpg" alt="Cocoa Prospects in Ivory Coast for 2011" class="w-full h-full object-cover rounded-t-xl"/>
+          <div class="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-20 transition-all rounded-t-xl flex items-center justify-center">
+            <div class="w-20 h-20 bg-red-600 rounded-full flex items-center justify-center group-hover:scale-110 transition">
+              <svg class="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-gray-800 mb-3">Cocoa Prospects in Ivory Coast for 2011</h3>
+        </div>
+      </div>
+
+      <!-- Video 4 -->
+      <div class="video-card cocoa-card rounded-xl cocoa-shadow overflow-hidden">
+        <div class="aspect-video bg-gray-200 relative group cursor-pointer" onclick="playVideo(this,'WB-03x0Xcss')">
+          <img src="https://img.youtube.com/vi/WB-03x0Xcss/maxresdefault.jpg" alt="Ghana's cocoa trade with Akin Laoye" class="w-full h-full object-cover rounded-t-xl"/>
+          <div class="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-20 transition-all rounded-t-xl flex items-center justify-center">
+            <div class="w-20 h-20 bg-red-600 rounded-full flex items-center justify-center group-hover:scale-110 transition">
+              <svg class="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-gray-800 mb-3">Ghana's cocoa trade with Akin Laoye</h3>
+        </div>
+      </div>
+
+      <!-- Video 5 -->
+      <div class="video-card cocoa-card rounded-xl cocoa-shadow overflow-hidden">
+        <div class="aspect-video bg-gray-200 relative group cursor-pointer" onclick="playVideo(this,'MKczPR8jXHc')">
+          <img src="https://img.youtube.com/vi/MKczPR8jXHc/maxresdefault.jpg" alt="Is debt crippling cocoa processing in Nigeria?" class="w-full h-full object-cover rounded-t-xl"/>
+          <div class="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-20 transition-all rounded-t-xl flex items-center justify-center">
+            <div class="w-20 h-20 bg-red-600 rounded-full flex items-center justify-center group-hover:scale-110 transition">
+              <svg class="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-gray-800 mb-3">Is debt crippling cocoa processing in Nigeria?</h3>
+        </div>
+      </div>
+
+      <!-- Video 6 -->
+      <div class="video-card cocoa-card rounded-xl cocoa-shadow overflow-hidden">
+        <div class="aspect-video bg-gray-200 relative group cursor-pointer" onclick="playVideo(this,'WwStoAV4KWo')">
+          <img src="https://img.youtube.com/vi/WwStoAV4KWo/maxresdefault.jpg" alt="How value addition can boost economic growth in Africa" class="w-full h-full object-cover rounded-t-xl"/>
+          <div class="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-20 transition-all rounded-t-xl flex items-center justify-center">
+            <div class="w-20 h-20 bg-red-600 rounded-full flex items-center justify-center group-hover:scale-110 transition">
+              <svg class="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-gray-800 mb-3">How value addition can boost economic growth in Africa</h3>
+        </div>
+      </div>
+
+      <!-- Video 7 -->
+      <div class="video-card cocoa-card rounded-xl cocoa-shadow overflow-hidden">
+        <div class="aspect-video bg-gray-200 relative group cursor-pointer" onclick="playVideo(this,'_T61yI7OfnU')">
+          <img src="https://img.youtube.com/vi/_T61yI7OfnU/maxresdefault.jpg" alt="Nigeria looks to reposition itself as a major cocoa industry player" class="w-full h-full object-cover rounded-t-xl"/>
+          <div class="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-20 transition-all rounded-t-xl flex items-center justify-center">
+            <div class="w-20 h-20 bg-red-600 rounded-full flex items-center justify-center group-hover:scale-110 transition">
+              <svg class="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-gray-800 mb-3">Nigeria looks to reposition itself as a major cocoa industry player</h3>
+        </div>
+      </div>
+
+    </div>
+  </main>
+</body>
+</html>
